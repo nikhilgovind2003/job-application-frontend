@@ -1,0 +1,131 @@
+.job-edit-popup {
+  background: #fff;
+  max-width: 600px;
+  margin: 50px auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  position: relative;
+}
+
+.job-edit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.job-edit-header h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.job-edit-close-btn {
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #888;
+  transition: color 0.3s ease;
+}
+.job-edit-close-btn:hover {
+  color: #000;
+}
+
+.job-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.job-edit-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-edit-group label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.job-edit-group input,
+.job-edit-group textarea {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.job-edit-group input:focus,
+.job-edit-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.job-edit-error {
+  color: #d9534f;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.job-edit-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.job-edit-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.job-edit-cancel,
+.job-edit-save {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+
+.job-edit-cancel {
+  background-color: #6c757d;
+  color: #fff;
+}
+.job-edit-cancel:hover {
+  background-color: #5a6268;
+}
+
+.job-edit-save {
+  background-color: #007bff;
+  color: #fff;
+}
+.job-edit-save:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .job-edit-popup {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .job-edit-row {
+    flex-direction: column;
+  }
+
+  .job-edit-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .job-edit-cancel,
+  .job-edit-save {
+    width: 100%;
+  }
+}

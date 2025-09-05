@@ -1,0 +1,164 @@
+/* Job Card Container */
+.job-card {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  margin: 20px auto;
+  width: 100%;
+  max-width: 600px;
+  transition: transform 0.3s ease;
+}
+
+
+.job-span{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Job Title */
+.job-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Job Details */
+.job-company,
+.job-location,
+.job-salary {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 6px;
+}
+.job-company{
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #007bff;
+}
+
+.job-salary {
+  color: #28a745;
+  text-align: start;
+  font-weight: 600;
+}
+
+/* Job Description */
+.job-description {
+  font-size: 1rem;
+  color: #444;
+  margin-top: 15px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.read-more {
+  color: #007bff;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+/* Apply Button */
+.apply-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 18px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Button Container */
+.job-btns {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Buttons */
+.job-edit-btn,
+.job-delete-btn,
+.view-applicants-btn {
+  flex: 1;
+  min-width: 120px;
+  padding: 10px;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.job-edit-btn {
+  background-color: #ffc107;
+}
+
+.job-edit-btn:hover {
+  background-color: #e0a800;
+}
+
+.job-delete-btn {
+  background-color: #dc3545;
+}
+
+.job-delete-btn:hover {
+  background-color: #c82333;
+}
+
+.view-applicants-btn {
+  background-color: #17a2b8;
+}
+
+.view-applicants-btn:hover {
+  background-color: #117a8b;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .job-card {
+    padding: 18px;
+  }
+
+  .job-title {
+    font-size: 1.5rem;
+  }
+
+  .job-description {
+    font-size: 0.95rem;
+  }
+
+  .apply-btn,
+  .job-edit-btn,
+  .job-delete-btn,
+  .view-applicants-btn {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .job-btns {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

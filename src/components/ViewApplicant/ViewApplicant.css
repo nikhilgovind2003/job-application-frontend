@@ -1,0 +1,102 @@
+.view-applicants {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 80px auto;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 15px;
+    background-color: #f9f9f9;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  li:hover {
+    background-color: #eaeaea;
+  }
+  
+  li .applicant-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .applicant-name-email {
+    flex: 1;
+  }
+  
+  .applicant-name-email span {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .cover-letter {
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    color: #555;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #888;
+    margin-top: 20px;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    li {
+      font-size: 1rem;
+      padding: 12px;
+    }
+  
+    .cover-letter {
+      font-size: 0.9rem;
+      max-height: 150px;
+    }
+  }
+  
+  /* Tablet responsiveness */
+  @media (max-width: 1024px) {
+    .view-applicants {
+      padding: 15px;
+    }
+  
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    li {
+      font-size: 1.1rem;
+      padding: 15px;
+    }
+  }
+  

@@ -1,0 +1,15 @@
+.my-jobs-page {
+    margin:0px auto;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+
+ 
+  @media (max-width: 600px) {
+    .job-card {
+      padding: 1rem;
+    }
+  
+  }
+  
