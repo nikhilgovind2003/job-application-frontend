@@ -11,7 +11,7 @@ const JobCard = ({ job, email, onDelete, showApplyButton }) => {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`http://localhost:5000/api/jobs/${job?._id}`, {
+      await axios.delete(`${import.meta.env.VITE_API_URL}/api/jobs/${job?._id}`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("authToken")}`,
         },

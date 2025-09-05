@@ -10,7 +10,7 @@ const ViewApplicants = () => {
   useEffect(() => {
     const fetchApplicants = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/applications/job/${jobId}`, {
+        const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/applications/job/${jobId}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("authToken")}`,
           },

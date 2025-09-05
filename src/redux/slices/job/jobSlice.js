@@ -23,7 +23,7 @@ export const getSingleJob = createAsyncThunk(
 
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/jobs/singleJob/${jobId}`,
+        `${import.meta.env.VITE_API_URL}/api/jobs/singleJob/${jobId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`, // Add the token to the request headers
@@ -43,7 +43,7 @@ export const getSingleJob = createAsyncThunk(
 
 // Async thunk to fetch all jobs
 export const fetchJobs = createAsyncThunk("jobs/fetchJobs", async () => {
-  const response = await axios.get("http://localhost:5000/api/jobs/all-jobs");
+  const response = await axios.get(`${import.meta.env.VITE_API_URL}/api/jobs/all-jobs`);
   return response.data.data; // Assuming the response data has a "data" property containing the jobs array
 });
 
@@ -52,7 +52,7 @@ export const updateJob = createAsyncThunk(
   "jobs/updateJob",
   async ({ jobId, jobData }) => {
     const response = await axios.put(
-      `http://localhost:5000/api/jobs/${jobId}`,
+      `${import.meta.env.VITE_API_URL}/api/jobs/${jobId}`,
       jobData,
       {
         headers: {

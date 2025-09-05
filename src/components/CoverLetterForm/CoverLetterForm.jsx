@@ -16,7 +16,7 @@ const CoverLetterForm = () => {
     console.log(jobId)
     try {
       const response = await axios.post(
-        `http://localhost:5000/api/applications/apply/${jobId}`, // Adjust the URL as needed
+        `${import.meta.env.VITE_API_URL}/api/applications/apply/${jobId}`, // Adjust the URL as needed
         { coverLetter: data.coverLetter },
         {
           headers: {
