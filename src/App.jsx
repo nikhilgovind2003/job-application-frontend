@@ -1,19 +1,19 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar/Navbar.jsx";
-import Home from "./pages/Home/Home.jsx";
-import Register from "./pages/Register/Register.jsx";
-import Login from "./pages/Login/Login.jsx";
-import CreateJob from "./pages/CreateJob/CreateJob.jsx";
-import MyJobs from "./pages/MyJobs/MyJobsPage.jsx";
-import ProtectedRoute from "./utils/PrivateRoute.jsx"; // ProtectedRoute for regular users
-import JobApplication from "./components/CoverLetterForm/CoverLetterForm.jsx";
-import NotFound from "./pages/PageNotFound/PageNotFound.jsx"; // Import the 404 page
-import ViewApplicants from "./components/ViewApplicant/ViewApplicant.jsx";
-import EditJob from "./components/EditJob/EditJob.jsx.jsx";
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./pages/Home/Home";
+import Register from "./pages/Register/Register";
+import Login from "./pages/Login/Login";
+import CreateJob from "./pages/createJob/CreateJob";
+import MyJobs from "./pages/MyJobs/MyJobsPage";
+import ProtectedRoute from "./utils/PrivateRoute"; // ProtectedRoute for regular users
+import JobApplication from "./components/CoverLetterForm/CoverLetterForm";
+import NotFound from "./pages/PageNotFound/PageNotFound"; // Import the 404 page
+import ViewApplicants from "./components/ViewApplicant/ViewApplicant";
+import EditJob from "./components/EditJob/EditJob.jsx";
 import 'react-toastify/dist/ReactToastify.css';
 
-import "./App.css.jsx";
+import "./App.css";
 import { ToastContainer } from "react-toastify";
 
 function App() {
